@@ -3,3 +3,9 @@ en:
   label_divergent_hours: Divergent time 
   label_remaining_hours: Remaining time
   setting_show_bottom_summary_line_on_issuelists: Display bottom summary line on issuelists
+  setting_enable_spent_hours_column: Enable Spent time column
+  setting_enable_calculated_spent_hours_column: Enable Calculated spent time column
+  setting_enable_divergent_hours_column: Enable Divergent time column
+  setting_enable_remaining_hours_column: Enable Remaining time column
+  legend_general_settings: General settings
+  legend_column_settings: Column settings

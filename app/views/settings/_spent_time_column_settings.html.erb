@@ -1,4 +1,27 @@
-<p>
-  <label><%= l(:setting_show_bottom_summary_line_on_issuelists) %></label>
-  <%= check_box_tag 'settings[show_bottom_summary_line_on_issuelists]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_on_issuelists'] == '1' %>
-</p>
+<fieldset>
+  <legend><%= l(:legend_general_settings) %></legend>
+  <p>
+    <label><%= l(:setting_show_bottom_summary_line_on_issuelists) %></label>
+    <%= check_box_tag 'settings[show_bottom_summary_line_on_issuelists]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_on_issuelists'] == '1' %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend><%= l(:legend_column_settings) %></legend>
+  <p>
+    <label><%= l(:setting_enable_spent_hours_column) %></label>
+    <%= check_box_tag 'settings[enable_spent_hours_column]', 1, Setting.plugin_redmine_spent_time_column['enable_spent_hours_column'] == '1' %>
+  </p>
+  <p>
+    <label><%= l(:setting_enable_calculated_spent_hours_column) %></label>
+    <%= check_box_tag 'settings[enable_calculated_spent_hours_column]', 1, Setting.plugin_redmine_spent_time_column['enable_calculated_spent_hours_column'] == '1' %>
+  </p>
+  <p>
+    <label><%= l(:setting_enable_divergent_hours_column) %></label>
+    <%= check_box_tag 'settings[enable_divergent_hours_column]', 1, Setting.plugin_redmine_spent_time_column['enable_divergent_hours_column'] == '1' %>
+  </p>
+  <p>
+    <label><%= l(:setting_enable_remaining_hours_column) %></label>
+    <%= check_box_tag 'settings[enable_remaining_hours_column]', 1, Setting.plugin_redmine_spent_time_column['enable_remaining_hours_column'] == '1' %>
+  </p>
+</fieldset>
