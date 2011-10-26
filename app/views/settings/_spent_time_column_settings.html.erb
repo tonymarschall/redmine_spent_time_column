@@ -1,9 +1,31 @@
 <fieldset>
-  <legend><%= l(:legend_general_settings) %></legend>
+  <legend><%= l(:legend_bottom_summary_line_settings) %></legend>
   <p>
     <label><%= l(:setting_show_bottom_summary_line_on_issuelists) %></label>
-    <%= check_box_tag 'settings[show_bottom_summary_line_on_issuelists]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_on_issuelists'] == '1' %>
+    <%= check_box_tag 'settings[show_bottom_summary_line_on_issuelists]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_on_issuelists'] == '1', :onclick=>"Element.toggle('bottom_summary_line_settings'); return true;" %>
   </p>
+  <div id="bottom_summary_line_settings" <%= Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_on_issuelists'] == '1' ? '' : 'style="display:none"' %>>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_estimated_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_estimated_hours]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_estimated_hours'] == '1' %>
+    </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_spent_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_spent_hours]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_spent_hours'] == '1' %>
+    </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_calculated_spent_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_calculated_spent_hours]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_calculated_spent_hours'] == '1' %>
+    </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_divergent_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_divergent_hours]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_divergent_hours'] == '1' %>
+    </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_remaining_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_remaining_hours]', 1, Setting.plugin_redmine_spent_time_column['show_bottom_summary_line_remaining_hours'] == '1' %>
+    </p>
+  </div>
 </fieldset>
 
 <fieldset>
