@@ -4,9 +4,12 @@
 
 == Todo
 
-* (COMPLETED) Add setting to control whether or not the bottom summary line should be displayed on issueslists (incl. calc.)
-* (COMPLETED) Add settings for enabling/disabling each of the five 'columns' on the issuelist bottom summary line (all 'columns' should be enabled by default). Again, including the calculations but now per column.
-* (COMPLETED) Add settings for enabling/disabling each of the four additional issuelist columns (only the 'Spent time column' should be enabled by default).
+Work towards a stable and highly configurable version 2.0.0 of the plugin:
+
+* (COMPLETED) Add setting to control whether or not the bottom summary line should be displayed on issueslists (incl. calc.);
+* (COMPLETED) Add settings for enabling/disabling each of the five 'columns' on the issuelist bottom summary line (all 'columns' should be enabled by default). Again, including the calculations but now per column;
+* (COMPLETED) Add settings for enabling/disabling each of the four additional issuelist columns (only the 'Spent time column' should be enabled by default);
 * (INPROGRESS) Fix handling of parent/sub-tasks:
   * On issuelist bottom summary line: don't double-count estimated/spent time (check for more) from +issue.children+;
-  * On issuelist columns: there seems to be a strange double-counting issue when using +issue.self_and_descendants+ on parent issues
+  * On issuelist columns: there seems to be a strange double-counting issue when using +issue.self_and_descendants+ on parent issues;
+* (TOSTART) Add new 'Calculated remaining time'-column (Estimated time - Spent time) (both as issuelist column and as bottom summary line column)
