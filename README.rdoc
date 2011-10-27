@@ -12,4 +12,5 @@ Work towards a stable and highly configurable version 2.0.0 of the plugin:
 * (INPROGRESS) Fix handling of parent/sub-tasks:
   * On issuelist bottom summary line: don't double-count estimated/spent time (check for more) from +issue.children+;
   * On issuelist columns: there seems to be a strange double-counting issue when using +issue.self_and_descendants+ on parent issues;
-* (TOSTART) Add new 'Calculated remaining time'-column (Estimated time - Spent time) (both as issuelist column and as bottom summary line column)
+* (TOSTART) Add new 'Calculated remaining time'-column (Estimated time - Spent time) (both as issuelist column and as bottom summary line column);
+* (TOSTART) Add proper documentation
