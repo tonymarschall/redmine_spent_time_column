@@ -26,11 +26,11 @@ module RedmineSpentTimeColumn
               ) unless columns.detect{ |c| c.name == :divergent_hours }
             end
 
-            if Setting.plugin_redmine_spent_time_column['enable_remaining_hours_column'] == '1'
-              columns << QueryColumn.new(:remaining_hours,
-                :caption => :label_remaining_hours,
+            if Setting.plugin_redmine_spent_time_column['enable_calculated_remaining_hours_column'] == '1'
+              columns << QueryColumn.new(:calculated_remaining_hours,
+                :caption => :label_calculated_remaining_hours,
                 :sortable => "(IF(#{Issue.table_name}.estimated_hours IS NULL,0,#{Issue.table_name}.estimated_hours) - (IF(#{Issue.table_name}.estimated_hours IS NULL,0,#{Issue.table_name}.estimated_hours) * #{Issue.table_name}.done_ratio / 100))"
-              ) unless columns.detect{ |c| c.name == :remaining_hours }
+              ) unless columns.detect{ |c| c.name == :calculated_remaining_hours }
             end
           end
         end
