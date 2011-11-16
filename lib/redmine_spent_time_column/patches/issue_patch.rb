@@ -13,6 +13,10 @@ module RedmineSpentTimeColumn
       def calculated_remaining_hours
         @calculated_remaining_hours ||= self_and_descendants.sum("estimated_hours - (estimated_hours * done_ratio / 100)").to_f || 0.0
       end
+
+      def remaining_hours
+        @remaining_hours ||= self_and_descendants.sum("estimated_hours").to_f - spent_hours || 0.0
+      end
       
     end
   end

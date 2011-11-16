@@ -25,6 +25,10 @@
       <label><%= l(:setting_show_bottom_summary_line_calculated_remaining_hours) %></label>
       <%= check_box_tag 'settings[show_bottom_summary_line_calculated_remaining_hours]', 1, @settings['show_bottom_summary_line_calculated_remaining_hours'] == '1' %>
     </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_remaining_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_remaining_hours]', 1, @settings['show_bottom_summary_line_remaining_hours'] == '1' %>
+    </p>
   </div>
 </fieldset>
 
@@ -45,5 +49,9 @@
   <p>
     <label><%= l(:setting_enable_calculated_remaining_hours_column) %></label>
     <%= check_box_tag 'settings[enable_calculated_remaining_hours_column]', 1, @settings['enable_calculated_remaining_hours_column'] == '1' %>
+  </p>
+  <p>
+    <label><%= l(:setting_enable_remaining_hours_column) %></label>
+    <%= check_box_tag 'settings[enable_remaining_hours_column]', 1, @settings['enable_remaining_hours_column'] == '1' %>
   </p>
 </fieldset>

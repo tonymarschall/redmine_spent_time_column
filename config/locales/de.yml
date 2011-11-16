@@ -1,16 +1,19 @@
 'de':
   label_calculated_spent_hours: Rechnerisch aufgewendete Zeit
   label_divergent_hours: Zeitabweichung
-  label_calculated_remaining_hours: Verbleibende Zeit
+  label_calculated_remaining_hours: Berechnete verbleibende Zeit
+  label_remaining_hours: Verbleibende Zeit
   setting_show_bottom_summary_line_on_issuelists: Fußzeile für die aufgewendete Zeit in der Ticketliste anzeigen
   setting_show_bottom_summary_line_estimated_hours: Geschätzte Zeit anzeigen
   setting_show_bottom_summary_line_spent_hours: Aufgewendete Zeit anzeigen
   setting_show_bottom_summary_line_calculated_spent_hours: Rechnerisch aufgewendete Zeit anzeigen
   setting_show_bottom_summary_line_divergent_hours: Abweichung zwischen aufgewendeter Zeit und Schätzung anzeigen
-  setting_show_bottom_summary_line_calculated_remaining_hours: Verleibende Zeit anzeigen
+  setting_show_bottom_summary_line_calculated_remaining_hours: Rechnerisch verleibende Zeit anzeigen
+  setting_show_bottom_summary_line_remaining_hours: Verbleibende Zeit anzeigen
   setting_enable_spent_hours_column: Spalte für verleibende Zeit verfügbar machen
   setting_enable_calculated_spent_hours_column: Spalte für rechnerisch aufgewendete Zeit verfügbar machen
   setting_enable_divergent_hours_column: Spalte für Abweichung zwischen aufgewendeter Zeit und Schätzung verfügbar machen
-  setting_enable_calculated_remaining_hours_column: Spalte für Verleibende Zeit verfügbar machen
+  setting_enable_calculated_remaining_hours_column: Spalte für rechnerisch verleibende Zeit verfügbar machen
+  setting_enable_remaining_hours_column: Spalte für verleibende Zeit verfügbar machen
   legend_bottom_summary_line_settings: Fußzeileneinstellungen für die Ticketliste
   legend_column_settings: Spalteneinstellungen für die Ticketliste
